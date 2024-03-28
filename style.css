@@ -7,6 +7,7 @@
 
 }
 
+
 body {
     Background: #000;
     width: 100vw;
@@ -16,35 +17,41 @@ body {
     align-items: center;
     height: 100vh;
     justify-content: center;
+    overflow-x: hidden;
 
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 h1 {
-    margin: 20px auto;
+   
     color: #fff;
    font-size: 40px;
 }
 
 img {
-   
-    Height:487px;
+  width: 300px;
+  height: 250px;
    
 }
-
-
-
 input {
     background: rgb(64, 64, 64);
-    width: 342px;
-    height: 74px;
+    width:232px;
+    height: 54px;
     border-radius: 24px;
     Border: 1px solid #fff;
     color: #fff;
-    margin: 30px;
     font-size: 40px;
     line-height: 48.6px;
-    padding: 50px; 
+    padding: 30px; 
     font-weight: bolder;
+    margin-left: 10px;
     
 }
 #result{
@@ -54,15 +61,15 @@ input {
 }
 
 p{
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     color: red;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 58px;
     font-weight: bolder;
-    margin-top: 30px;
+
     background-color: white;
     border-radius: 50%;
 
@@ -70,13 +77,14 @@ p{
 
 button {
     background-color: #AEC346;
-    Width: 342px;
-    Height: 72px;
+    Width: 172px;
+    Height: 52px;
     left: 849px;
-    font-size: 50px;
+    font-size: 40px;
     border-radius: 10px;
     color: #fff;
-    margin: 30px;
+    margin-left: 10px;
+ 
    
 }
 .btn{
@@ -94,8 +102,58 @@ button:active {
 }
 
 
+@media screen and (max-width: 750px){
+    img {
+        width: 393px;
+        height: 361px;
+        margin-top: 48px;
+    }
+    input{
+        margin: 5px 0 0 10px ;
+        width: 203px;
+        
+    }
+    button{
+        margin: 10px 0 0 10px ;
+        width: 191px;
+    }
+    p {
+        width: 131px;
+        height: 118px;
+        color: red;
+       margin: 10px 0 0 0;
 
+}
+}
+@media screen and (max-width:400px){
+    
+img {
+    width: 305px;
+    height: 300px;
+    margin-top: 49px;
+}
 
+h1 {
+    color: #fff;
+    font-size: 33px;}
+    input {
+        margin: 5px 0 0 10px;
+        width: 159px;
+
+}
+ button{
+    width: 160px;
+ }
+p{
+
+    width: 127px;
+    height: 114px;
+    color: red;
+    margin: 10px 0px 0px;
+
+}
+
+}
 
 
 
